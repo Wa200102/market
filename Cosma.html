@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!--==Title==================================-->
+    <title>Smart Buy</title>
+
+    <!--==Stylesheet=============================-->
+    <link rel="Stylesheet" type="text/css" href="css/style.css"/>
+
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/logo.png"/>
+
+    <!--==Using-Font-Awesome=====================-->
+    <link rel="Stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--==Import-Font-Familty====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!--==navigation=============================-->
+    <nav class="navigation">
+
+        <!--logo-------->
+        <a href="#" class="logo">
+            <span>Smart </span>Buy
+        </a>
+
+        <!--menu-------->
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutus.html">Aboutus</a></li>
+            <li><a href="Cosma.html">Our Products</a></li>
+            <li><a href="Checkout.html">Checkout</a></li>
+        </ul>
+
+        <!--right-nav-(cart)-->
+        <div class="right-nav">
+
+            <!--cart----->
+            <a href="#" class="cart">
+                <i class="far fa-shopping-cart"></i>
+            </a>
+
+        </div>
+    </nav>
+    <!--nav-end--------------------->
+
+<!--==E-Product====================================-->
+<section id="E-Product">
+
+    <!--heading--------------->
+    <div class="product-heading">
+        <h3>Fruits</h3>
+        <span>All</span>
+    </div>
+
+    <!--product-box-container--->
+    <div class="product-container">
+
+        <div class="product-box">
+            <img src="images/fruits/apple.jpeg" alt="Apple">
+            <div><label>Apple (kg): <input type="number" id="Apple" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/fruits/ava.jpeg" alt="Avacado">
+            <div><label>Avacado (kg): <input type="number" id="Avacado" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/fruits/banana.jpeg" alt="Banana">
+            <div><label>Banana (kg): <input type="number" id="Banana" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/fruits/cherry.jpeg" alt="Cherry">
+            <div><label>Cherry (kg): <input type="number" id="Cherry" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/fruits/gauva.jpeg" alt="Gauva">
+            <div><label>Gauva (kg): <input type="number" id="Gauva" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/fruits/mango.jpeg" alt="Mango">
+            <div><label>Mango (kg): <input type="number" id="Mango" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+</section>
+<!--popular-product-end--------------------->
+
+<!--==E-Product====================================-->
+<section id="E-Product">
+
+    <!--heading--------------->
+    <div class="product-heading">
+        <h3>Vegetables</h3>
+        <span>All</span>
+    </div>
+
+    <!--product-box-container--->
+    <div class="product-container">
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/beet.jpeg" alt="Beetroot">
+            <div><label>Beetroot (kg): <input type="number" id="Beetroot" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/brinjal.jpeg" alt="Brinjal">
+            <div><label>Brinjal (kg): <input type="number" id="Brinjal" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/chili.png" alt="Chili">
+            <div><label>Chili (kg): <input type="number" id="Chili" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/cuca.jpeg" alt="Cucumber">
+            <div><label>Cucumber (kg): <input type="number" id="Cucumber" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/garlic.png" alt="Garlic">
+            <div><label>Garlic (kg): <input type="number" id="Garlic" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/vege/green.jpeg" alt="Green Cabbage">
+            <div><label>Green Cabbage (kg): <input type="number" id="Green Cabbage" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+</section>
+<!--popular-product-end--------------------->
+
+<!--==E-Product====================================-->
+<section id="E-Product">
+
+    <!--heading--------------->
+    <div class="product-heading">
+        <h3>Baking and Cooking Ingredients</h3>
+        <span>All</span>
+    </div>
+
+    <!--product-box-container--->
+    <div class="product-container">
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/baking powder.jpeg" alt="Baking Powder">
+            <div><label>Baking Powder (Quantity): <input type="number" id="Baking Powder" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/Bicarbonate of soda.jpeg" alt="Bicarbonate of Soda">
+            <div><label>Bicarbonate of Soda (Quantity): <input type="number" id="Bicarbonate of Soda" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/butter.jpeg" alt="Butter">
+            <div><label>Butter (Quantity): <input type="number" id="Butter" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/Cocoa powder.jpeg" alt="Cocoa Powder">
+            <div><label>Cocoa Powder (Quantity): <input type="number" id="Cocoa Powder" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/egg.jpeg" alt="Egg">
+            <div><label>Egg (Quantity): <input type="number" id="Egg" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/bake/Flour.jpeg" alt="Flour">
+            <div><label>Flour (Quantity): <input type="number" id="Flour" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+</section>
+<!--popular-product-end--------------------->
+
+<!--==E-Product====================================-->
+<section id="E-Product">
+
+    <!--heading--------------->
+    <div class="product-heading">
+        <h3>Daily Products</h3>
+        <span>All</span>
+    </div>
+
+    <!--product-box-container--->
+    <div class="product-container">
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/chcoc.jpg" alt="Chocolate">
+            <div><label>Chocolate (Quantity): <input type="number" id="Chocolate" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/det.jpg" alt="Dettol">
+            <div><label>Dettol (Quantity): <input type="number" id="Dettol" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/egg.jpg" alt="Egg">
+            <div><label>Egg (Quantity): <input type="number" id="Egg" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/ice.jpg" alt="Ice Cream">
+            <div><label>Ice Cream (Quantity): <input type="number" id="Ice Cream" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/milk.jpg" alt="Milk Powder">
+            <div><label>Milk Powder (Quantity): <input type="number" id="Milk Powder" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/daily/paste.jpg" alt="Tooth Paste">
+            <div><label>Tooth Paste (Quantity): <input type="number" id="Tooth Paste" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+</section>
+<!--popular-product-end--------------------->
+
+<!--==E-Product====================================-->
+<section id="E-Product">
+
+    <!--heading--------------->
+    <div class="product-heading">
+        <h3>Meat and Seafood</h3>
+        <span>All</span>
+    </div>
+
+    <!--product-box-container--->
+    <div class="product-container">
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/beef.jpeg" alt="Beef">
+            <div><label>Beef (kg): <input type="number" id="Beef" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/chieckn.jpeg" alt="Chicken">
+            <div><label>Chicken (kg): <input type="number" id="Chicken" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/crispy chicken.jpeg" alt="Crispy Chicken">
+            <div><label>Crispy Chicken (kg): <input type="number" id="Crispy Chicken" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/fish.jpeg" alt="Fish">
+            <div><label>Fish (kg): <input type="number" id="Fish" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/isso.jpeg" alt="Isso">
+            <div><label>Isso (kg): <input type="number" id="Isso" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+        <!--box---------->
+        <div class="product-box">
+            <img src="images/meat/karawala.jpeg" alt="Karawala">
+            <div><label>Karawala (kg): <input type="number" id="Karawala" min="0" step="0.1"></label></div>
+            <!--cart-btn-------->
+            <button type="button" onclick="addItem()">Add Item</button>
+        </div>
+
+</section>
+<!--popular-product-end--------------------->
+
+    <form>
+        <button type="button" onclick="addItem()">Add Item</button>
+        <button type="button" onclick="saveToFavourites()">Add to Favourites</button>
+        <button type="button" onclick="applyFavourites()">Apply Favourites</button>
+    </form>
+
+    <table id="orderTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="totalPrice">$0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <a href="Checkout.html">
+    <button type="button" onclick="buyNow()">Buy Now</button>
+    </a>
+
+    <script>
+        function buyNow() {
+            window.location.href = "Checkout.html";
+        }
+    </script>
+
+    <div id="orderSummary" style="display: none;">
+        <h2>Order Summary</h2>
+        <p id="summaryDetails"></p>
+        <form id="paymentForm">
+            <label>Name: <input type="text" name="name" required></label>
+            <label>Address: <input type="text" name="address" required></label>
+            <label>Payment Info: <input type="text" name="payment" required></label>
+            <button type="button" onclick="pay()">Pay</button>
+        </form>
+    </div>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Learn more about our supermarket, our values, and our commitment to providing the best shopping experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/warun.kumar.9843?mibextid=LQQJ4d"><img src="images/vege/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="images/vege/ex.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/_warun_official?igsh=MXBkd3l6eXoyZjN6Nw=="><img src="images/vege/exxxx.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Locations</h4>
+                    <p>Find the nearest store to you.</p>
+                    <a href="#" class="locations-button">Store Locator</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smart Buy (PVT) LTD. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="js/final.js"></script>
+</body>
+</html>

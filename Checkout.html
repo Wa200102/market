@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!--==Title==================================-->
+    <title>Smart Buy</title>
+
+    <!--==Stylesheet=============================-->
+    <link rel="Stylesheet" type="text/css" href="css/style.css"/>
+
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/logo.png"/>
+
+    <!--==Using-Font-Awesome=====================-->
+    <link rel="Stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--==Import-Font-Familty====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!--==navigation=============================-->
+    <nav class="navigation">
+
+        <!--logo-------->
+        <a href="#" class="logo">
+            <span>Smart </span>Buy
+        </a>
+
+        <!--menu-------->
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutus.html">Aboutus</a></li>
+            <li><a href="Cosma.html">Our Products</a></li>
+            <li><a href="Checkout.html">Checkout</a></li>
+        </ul>
+
+        <!--right-nav-(cart)-->
+        <div class="right-nav">
+
+            <!--cart----->
+            <a href="#" class="cart">
+                <i class="far fa-shopping-cart"></i>
+            </a>
+
+        </div>
+    </nav>
+    <!--nav-end--------------------->
+
+
+
+<body>
+    <h1>Order Summary</h1>
+    <p>Your order details will go here.</p>
+
+    <form id="orderForm" onsubmit="return submitOrder()">
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <h2>Delivery Details</h2>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" required><br>
+
+        <h2>Payment Information</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br>
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" required><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br>
+
+        <button type="submit">Pay</button>
+    </form>
+
+    <p id="thankYouMessage" style="display: none;"></p>
+
+    <script>
+        function submitOrder() {
+            // Validate the form (HTML5 required attributes handle most of it)
+            const form = document.getElementById('orderForm');
+            if (form.checkValidity()) {
+                // Calculate the delivery date (e.g., 5 days from today)
+                const deliveryDate = new Date();
+                deliveryDate.setDate(deliveryDate.getDate() + 5);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = deliveryDate.toLocaleDateString(undefined, options);
+
+                // Display the thank you message
+                const message = `Thank you for your purchase! Your order will be delivered on ${formattedDate}.`;
+                document.getElementById('thankYouMessage').textContent = message;
+                document.getElementById('thankYouMessage').style.display = 'block';
+
+                // Hide the form after submission
+                form.style.display = 'none';
+
+                // Prevent the form from actually submitting
+                return false;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
